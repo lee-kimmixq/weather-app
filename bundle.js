@@ -3191,7 +3191,7 @@ global.onButtonClick = () => {
 
 // ==================== FOR INDEX.HTML (MAIN PAGE) ==============================
 
-if (currentPath === "index.html") {
+if (!currentPath) {
   renderAllCityCards();
 }
 
