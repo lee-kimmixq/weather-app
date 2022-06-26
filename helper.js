@@ -158,7 +158,7 @@ const getUvIndex = (uv) => {
 const makeApiCall = ({ city, isNew, idx, isDetailView }) => {
   axios
     .get(
-      `http://api.weatherapi.com/v1/forecast.json?key=${process.env.API_KEY}&q=${city}&aqi=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=${process.env.API_KEY}&q=${city}&aqi=no`
     )
     .then(({ data }) => {
       const cities = getCitiesFromLocalStorage();
