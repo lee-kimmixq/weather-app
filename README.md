@@ -10,4 +10,5 @@
 ## Setup
 
 1. `npm i`
-2. `npm run watch` (dev) / `npm run build`
+2. Create `.env` file with `API_KEY=<your_api_key>`
+3. `npm run watch` (dev) / `npm run build`
