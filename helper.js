@@ -83,7 +83,7 @@ const renderCityName = (city) => {
 const renderCityDetails = (data) => {
   const cityDetails = {
     cityDate: formatDate(data.location.localtime),
-    weatherIcon: `<img src="http:${data.current.condition.icon}" />`,
+    weatherIcon: `<img src="https:${data.current.condition.icon}" />`,
     cityTemp: `${roundToInteger(data.current.temp_c)}°`,
     cityCondition: data.current.condition.text,
     minCityTemp: `${roundToInteger(
