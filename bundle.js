@@ -84,7 +84,7 @@ const renderCityName = (city) => {
 const renderCityDetails = (data) => {
   const cityDetails = {
     cityDate: formatDate(data.location.localtime),
-    weatherIcon: `<img src="http:${data.current.condition.icon}" />`,
+    weatherIcon: `<img src="https:${data.current.condition.icon}" />`,
     cityTemp: `${roundToInteger(data.current.temp_c)}°`,
     cityCondition: data.current.condition.text,
     minCityTemp: `${roundToInteger(
@@ -159,7 +159,7 @@ const getUvIndex = (uv) => {
 const makeApiCall = ({ city, isNew, idx, isDetailView }) => {
   axios
     .get(
-      `http://api.weatherapi.com/v1/forecast.json?key=${"402d6cfe7b8644199d322309222306"}&q=${city}&aqi=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=${"402d6cfe7b8644199d322309222306"}&q=${city}&aqi=no`
     )
     .then(({ data }) => {
       const cities = getCitiesFromLocalStorage();
