@@ -1,0 +1,23 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "browserify script.js -t @sethvincent/dotenvify > bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec \"npm run build\" -e js --ignore bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "query-string": "^7.1.1"
+  },
+  "devDependencies": {
+    "@sethvincent/dotenvify": "^1.0.4",
+    "nodemon": "^2.0.18"
+  }
+}
